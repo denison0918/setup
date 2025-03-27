@@ -1,0 +1,12 @@
+jenkins:
+  container_name: jenkins
+  build:
+    context: jenkins-dockerfile
+    dockerfile: Dockerfile
+  restart: unless-stopped
+  user: root
+  ports: 
+    -"8180:8080"
+    -"50000:50000"
+  volumes:
+    - jenkins_home:/ #홈디렉토리정도??
