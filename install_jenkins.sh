@@ -80,16 +80,3 @@ sudo docker run -d \
         exit 1
     }
 echo ">>> $CONTAINER_NAME 컨테이너 실행 완료."
-
-
-## Run Docker Container (USER root)
-#echo ">>> $CONTAINER_NAME 컨테이너 실행 시작..."
-#sudo docker run -d -u root \
-#    -p 8081:8080 -p 50000:50000 \
-#    -v /var/jenkins_home:/var/jenkins_home \
-#    -v /var/run/docker.sock:/var/run/docker.sock \
-#    --name $CONTAINER_NAME $IMAGE_NAME || {
-#        echo ">>> $CONTAINER_NAME 컨테이너 실행 실패."
-#        exit 1
-#    }
-#echo ">>> $CONTAINER_NAME 컨테이너 실행 완료."
