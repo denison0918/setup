@@ -9,4 +9,4 @@ jenkins:
     -"8180:8080"
     -"50000:50000"
   volumes:
-    - jenkins_home:/ #홈디렉토리정도??
+    - /var/jenkins_home:/var/jenkins_home

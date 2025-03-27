@@ -72,7 +72,7 @@ echo -e ">>> $IMAGE_NAME 이미지 빌드 완료.\n"
 echo ">>> $CONTAINER_NAME 컨테이너 실행 시작..."
 sudo chown -R 1000:1000 /var/jenkins_home
 sudo docker run -d \
-    -p 8081:8080 -p 50000:50000 \
+    -p 8180:8080 -p 50000:50000 \
     -v /var/jenkins_home:/var/jenkins_home \
     -v /var/run/docker.sock:/var/run/docker.sock \
     --name $CONTAINER_NAME $IMAGE_NAME || {
