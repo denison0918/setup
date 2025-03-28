@@ -9,3 +9,6 @@ RUN apt-get update && \
     install -m 0755 -d /etc/apt/keyrings && \
     curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc && \
     chmod a+r /etc/apt/keyrings/docker.asc 
+# Docker CLI 설치
+# RUN apt-get update && \
+# apt-get install -y docker-ce docker-ce-cli containerd.io
