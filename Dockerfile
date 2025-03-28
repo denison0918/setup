@@ -16,5 +16,3 @@ RUN apt-get update && \
 # Docker CLI 설치
 RUN apt-get update && \
     apt-get install -y docker-ce docker-ce-cli containerd.io
-
-# https://velog.io/@sihoon_cho/AWSEC2-AWS-EC2-Docker-Jenkins-%EC%84%A4%EC%B9%98
