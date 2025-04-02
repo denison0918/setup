@@ -2,13 +2,14 @@
 services:
   jenkins:
     image: jenkins/jenkins:lts-jdk17
-    container_name: my-jenkins
+    container_name: jenkins
     ports:
-      - "8180:8080"
+      - "80:8080"
       - "50000:50000"
     volumes:
       - jenkins_data:/var/jenkins_home
-    restart: unless-stopped  # 자동 재시작 설정
+    restart: unless-stopped
+    user: "1000"  # 권한 문제 방지를 위해 UID 지정
 
 volumes:
-  jenkins_data:  # 볼륨 생성
+  jenkins_home:  # 볼륨 생성
