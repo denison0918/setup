@@ -2,6 +2,7 @@
 services:
   jenkins:
     image: jenkins/jenkins:lts-jdk17
+    platform: linux/amd64  # ARM 호스트 대비
     container_name: jenkins
     ports:
       - "80:8080"
