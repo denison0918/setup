@@ -1,0 +1,11 @@
+# 이부분이 pipeline 코드에 추가되어야함
+pipeline {
+    agent any
+    stages {
+        stage('checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/denison0918/setup.git'
+            }        
+        }
+    }
+}
