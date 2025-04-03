@@ -8,4 +8,5 @@
 
 - $ sudo cat /var/jenkins_home/secrets/initialAdminPassword
 
-# 테스트 환경 cloudfront 에서 동작쪽 신경써야함 > 현재는 모두로 설정
+# 테스트 환경 cloudfront 에서 동작쪽 신경써야함 
+- 현재는 모두로 설정
