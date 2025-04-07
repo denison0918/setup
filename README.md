@@ -1,3 +1,10 @@
+# docker 설치 & 서비스 
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+docker-compose --version
+
+
 # Jenkins 접속
 
 아래 명령어들 중 하나를 선택해 초기 비밀번호 확인
